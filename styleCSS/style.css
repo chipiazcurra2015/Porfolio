@@ -154,6 +154,7 @@ html {
 }
 
 .formulario {
+    color: white;
     background-color: rgb(38, 6, 68);
     width: min(60rem , 100%); /** utiliza el valor mas pequeño**/
     margin:0 auto;
@@ -162,4 +163,15 @@ html {
 }
 .formulario fieldset {
     border: none;
+}
+.legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+.contenedor-campos{
+    
 }
