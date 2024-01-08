@@ -2,12 +2,21 @@
 
 html {
     font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+}
+/**Scroll snap**/
+.servicio,
+.navegacion-principal,
+.formulario,
+.footer {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 body {
   
     font-size: 16px;
     font-family: 'Libre Baskerville', serif;
-    background-image: linear-gradient(to top, rgba(202, 201, 201, 0.801) 0%, #dfe 100% ); /*--se aplica el degradado de fondo--*/
+    background-image: linear-gradient(to top, rgba(126, 119, 119, 0.801) 0%, #dfe 100% ); /*--se aplica el degradado de fondo--*/
 }
 html {
     box-sizing: border-box;
@@ -33,7 +42,7 @@ html {
     margin:0 100 0 0  ;
 }
 .navegacion-principal {
-    background-color: aqua; 
+    background-color:  rgb(38, 6, 68); 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -51,7 +60,7 @@ html {
 }
 
 .navegacion-principal a {
-    color: blueviolet;  
+    color: white;  
     text-decoration: none;
     padding: 1rem;   
 }
@@ -61,7 +70,7 @@ html {
 }
 
 .boton{
-    background-color: aqua;
+    background-color:  rgb(38, 6, 68);
     color: white;
     padding: 1rem 3rem;
     margin-top: 1rem;
@@ -127,6 +136,7 @@ html {
         margin: 0 25;
     }
 }
+
 @media (min-width: 480px) {
     .servicios {
     display: grid;
@@ -157,8 +167,7 @@ html {
 }
 .servicio .iconos:hover{
     background-color: rgb(201, 201, 98);
-    height: 16rem;
-    width: 16rem;
+    
 }
 .formulario {
     color: white;
@@ -251,4 +260,11 @@ html {
 .enviar :hover{
     text-decoration: underline;
     font-size: 2.7rem;
+}
+
+.hr{
+    margin-top: 3rem;
+}
+.footer{
+    text-align: center;
 }
