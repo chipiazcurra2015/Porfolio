@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1bbda01b96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styleCSS/normalize.css">
     <link rel="preload" href="./styleCSS/style.css" as="style"> <!--Esta linea es para agilizar el CSS se usa ahora--> 
     <link rel="stylesheet" href="./styleCSS/style.css">
@@ -32,7 +33,7 @@
                 <path d="M19 18v.01" />
             </svg>
                 Argentina, Mendoza</p>
-            <a class="boton" href="#">Contactar</a>
+            <a class="boton" href="https://wa.link/h0xwt8">Contactar</a>
         </div>
     </section>
 
@@ -101,34 +102,50 @@
                             <div>    
                                 <img class="imagen" src="./img/sobremi.png" alt="#">
                             </div>
+                            <div class="iconos-redes">
+                                <a href="https://wa.link/h0xwt8"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://github.com/chipiazcurra2015"><i class="fa-brands fa-github"></i></a>
+                                <a href="http://www.linkedin.com/in/gabriel-azcurra-60963b227"><i class="fa-brands fa-linkedin"></i></a>
+                             </div>
                         </div>
                 </section>
             <section class="servicio">
-                </div>    
-                <form class="formulario">
+                </div>   
+                <section class="galeria">
+                    <img src="data:image/png;base64,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" alt="#">
+                    <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" alt="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZcpvdnbhcRhQ_D-Gxk2yO_MEYCH6hGioKYRiM_rQjZJPez2kxbJ-ODzXYUFtU2uTh78&usqp=CAU" alt="#">
+                    <img src="https://blog.buhoos.com/wp-content/uploads/2022/01/JavaScript_logo.png" alt="#">
+                    <img src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png" alt="#">
+                    <img src="https://создание-сайта.net/images/newsnew/newsnew/mysql2.jpg" alt="#">
+                    <img src="https://google.github.io/sqlcommenter/images/sequelize-logo.png" alt="#">
+                </section> 
+                <form class="formulario" action="https://formsubmit.co/f16be44072e51cdf0bbe46cc4968e24d" method="POST">
                     <fieldset>
                             <legend class="legend">Contáctame llenando todos los campos</legend>
                         <div class="contenedor-campos">
                                 <div class="campos">
                                     <label>Nombre: </label>
-                                    <input type="text" placeholder="Nombre"/>
+                                    <input type="text" name="name" placeholder="Nombre"/>
                                 </div>
                                 <div class="campos">
                                     <label>Teléfono: </label>
-                                    <input type="tel" placeholder="Tu teléfono"/> 
+                                    <input type="tel" name="teléfono" placeholder="Tu teléfono"/> 
                                 </div >
                                 <div class="campos">
                                     <label>Correo: </label>
-                                        <input type="email" placeholder="Tu email">
+                                        <input type="email" name="email" placeholder="Tu email">
                                 </div>
                                 <div class="campos">
                                     <label>Mensaje: </label>
-                                    <textarea></textarea>
+                                    <textarea name="coments" ></textarea>
                                 </div>
                         </div>
                                 <div class="enviar">
-                                    <input type="submit" value="Enviar">
-                            </div>
+                                    <input type="submit" value="ENVIAR">
+                                </div>
+                            <input type="hidden" name="_next" value="https://fullstack-gabrielazcurra.netlify.app/">
+                            <input type="hidden" name="_captcha" value="false">
                     </fieldset>
                 </form>
                 <hr class="hr">

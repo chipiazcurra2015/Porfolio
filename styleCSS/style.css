@@ -55,9 +55,6 @@ html {
     justify-content: space-around;
     align-items: center;
 }
-.navegacion-principal :hover{
-    font-size: 1.7rem;
-}
 
 @media (min-width: 480px) {
     .navegacion-principal {
@@ -72,8 +69,7 @@ html {
     padding: 1rem;   
 }
 .navegacion-principal a:hover {
-    background-color: yellow;   
-    color: black;
+    border: 0.5px solid yellow;  
 }
 
 .boton{
@@ -90,8 +86,7 @@ html {
     text-align: center;
 }
 .boton:hover{
-    font-size: 2.1rem;
-    border: 2px solid yellow;
+    border: 0.5px solid yellow;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -176,14 +171,15 @@ html {
     align-items: center;
 }
 .servicio .iconos:hover{
-    background-color: rgb(201, 201, 98);
+    border: 3px solid yellow;
+    transform: translateY(-10px);
     
 }
 .formulario {
     color: white;
     background-color: rgb(38, 6, 68);
     width: min(60rem , 100%); /** utiliza el valor mas pequeño**/
-    margin:0 auto;
+    margin:1rem auto;
     padding: 2rem;
     border-radius: 2rem;
 }
@@ -224,16 +220,7 @@ html {
         padding: 1rem;
         border-radius: .5rem;
     }
-    
-.enviar {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-}
-.enviar :hover{
-    text-decoration: underline;
-    font-size: 2.2rem;
-}
+ 
 
 
 
@@ -255,22 +242,30 @@ html {
     width: 100%;
     border: none;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 0rem;
 }
 .campos textarea{
     height: 15rem;
     width: 100%;
 }
 .enviar {
-    display: flex;
-    justify-content: center;
+    display: block;
+    padding: 10px 20px;
     font-size: 2.5rem;
-    border-radius: 1rem;
+    border: none;
+    border-radius: 5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, font-size 0.3s;
 }
-.enviar :hover{
+.enviar:hover {
     text-decoration: underline;
     font-size: 2.7rem;
 }
+.enviar:active {
+    transform: scale(0.95);
+}
+
 
 .hr{
     margin-top: 3rem;
@@ -290,8 +285,56 @@ html {
 }
 .imagen {
     width: 90%;
-    margin: 0 0 3rem 0;
+    margin: 0 0 1rem 0;
+    transition: .5s ease;
 }
+.imagen:hover{
+    width: 45rem;
+}
+
+
+.iconos-redes a i{
+    text-align: center;
+    font-size: 40px;
+    margin: 0.5rem;
+}
+.iconos-redes a {
+    margin-bottom: 3rem;
+}
+.iconos-redes a:hover{
+    transform: translateY(-5px);
+}
+@media (min-width: 480px) {
+    .iconos-redes{
+        position: absolute;
+        bottom: 70px;
+  }
+  .iconos-redes a{
+      display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: var(--color-secundario);
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fffcff;
+    outline: 2px solid var(--color-secundario);
+    transition: .3s;
+}
+.iconos-redes a:hover{
+    transform: translateY(-5px);
+}
+.iconos-redes a i{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 7px;
+    color: #fffcff;
+}
+}
+
+
+
 @media (min-width: 480px) {
     
     .sobre-mi div {
@@ -307,5 +350,48 @@ html {
     }
     .imagen :hover {
         width: 100%;
+    }
+}
+
+.galeria{
+    margin-left: 0rem;
+    margin-bottom: 4rem;
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .5s ease;
+}
+.galeria img:hover{
+    cursor: all-scroll;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+@media (min-width: 480px) {
+    .galeria{
+        margin-left: 22rem;
+        margin-bottom: 4rem;
+        display: flex;
+        width: 850px;
+        height: 430px;
+    }
+    .galeria img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .9;
+        transition: .5s ease;
+    }
+    .galeria img:hover{
+        cursor: all-scroll;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
     }
 }
