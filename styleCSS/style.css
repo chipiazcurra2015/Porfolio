@@ -67,9 +67,10 @@ html {
     color: white;  
     text-decoration: none;
     padding: 1rem;   
+    transition: .3s;
 }
 .navegacion-principal a:hover {
-    border: 0.5px solid yellow;  
+    transform: translateY(-3px);
 }
 
 .boton{
@@ -84,10 +85,11 @@ html {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    transition: .3s;
 }
 .boton:hover{
-    border: 0.5px solid yellow;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
 }
 
 @media (min-width: 480px) {
@@ -172,7 +174,7 @@ html {
 }
 .servicio .iconos:hover{
     border: 3px solid yellow;
-    transform: translateY(-10px);
+    transform: translateY(-2px);
     
 }
 .formulario {
@@ -181,7 +183,7 @@ html {
     width: min(60rem , 100%); /** utiliza el valor mas pequeño**/
     margin:1rem auto;
     padding: 2rem;
-    border-radius: 2rem;
+    border-radius: 0rem;
 }
 .formulario fieldset {
     border: none;
@@ -283,20 +285,12 @@ html {
     align-items: center;
     text-align: center;
 }
-.imagen {
-    width: 90%;
-    margin: 0 0 1rem 0;
-    transition: .5s ease;
-}
-.imagen:hover{
-    width: 45rem;
-}
-
 
 .iconos-redes a i{
     text-align: center;
     font-size: 40px;
     margin: 0.5rem;
+    color: rgb(38, 6, 68);
 }
 .iconos-redes a {
     margin-bottom: 3rem;
@@ -310,7 +304,7 @@ html {
         bottom: 70px;
   }
   .iconos-redes a{
-      display: inline-block;
+    display: inline-block;
     width: 45px;
     height: 45px;
     background: var(--color-secundario);
@@ -333,8 +327,14 @@ html {
 }
 }
 
-
-
+.imagen {
+    width: 90%;
+    margin: 0 0 1rem 0;
+    transition: .5s ease;
+}
+.imagen:hover{
+    width: 52rem;
+}
 @media (min-width: 480px) {
     
     .sobre-mi div {
@@ -372,6 +372,34 @@ html {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+@media (min-width: 280px) {
+    .galeria{
+    margin-top: 2rem;
+    margin-left: 0rem;
+    margin-bottom: 4rem;
+    display: flex;
+    width: 280px;
+    height: 303px;
+    }
+}
+@media (min-width: 360px) {
+    .galeria{
+        margin: 1.5rem 0 0 0;
+        margin-bottom: 4rem;
+        display: flex;
+        width: 360px;
+        height: 385px;
+    }
+}
+@media (min-width: 412px) {
+    .galeria{
+        margin: 1.5rem 0 0 0;
+        margin-bottom: 4rem;
+        display: flex;
+        width: 412px;
+        height: 385px;
+    }
 }
 @media (min-width: 480px) {
     .galeria{
