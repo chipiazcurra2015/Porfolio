@@ -105,7 +105,7 @@ html {
     margin-top: 1rem;
     font-size: 2rem;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: bold;
     border-radius: .5rem;
     width: 90%;
@@ -121,8 +121,8 @@ html {
 @media (min-width: 480px) {
     .boton{
         width: auto;
-        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	    animation: heartbeat 1.5s ease-in-out infinite both;
+        -webkit-animation: heartbeat 2.3s ease-in-out infinite both;
+	    animation: heartbeat 2.3s ease-in-out infinite both;
     }
     @-webkit-keyframes heartbeat {
         from {
@@ -219,50 +219,45 @@ html {
 .contenido-hero h2,
 .contenido-hero p {
     color: white;
-    -webkit-animation: focus-in-contract-bck 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: focus-in-contract-bck 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
-@-webkit-keyframes focus-in-contract-bck {
+@-webkit-keyframes text-focus-in {
     0% {
-      letter-spacing: 1em;
-      -webkit-transform: translateZ(300px);
-              transform: translateZ(300px);
       -webkit-filter: blur(12px);
               filter: blur(12px);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateZ(12px);
-              transform: translateZ(12px);
-      -webkit-filter: blur(0);
-              filter: blur(0);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
       opacity: 1;
     }
   }
-  @keyframes focus-in-contract-bck {
+  @keyframes text-focus-in {
     0% {
-      letter-spacing: 1em;
-      -webkit-transform: translateZ(300px);
-              transform: translateZ(300px);
       -webkit-filter: blur(12px);
               filter: blur(12px);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateZ(12px);
-              transform: translateZ(12px);
-      -webkit-filter: blur(0);
-              filter: blur(0);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
       opacity: 1;
     }
   }
 .sombra {
     background-color: white;
-    padding: 2rem;
+    padding: 2rem 44px;
     border-radius: 0rem;
 }
 .main {
     margin: 0 rem;
+}
+.mis{
+    color:rgb(38, 6, 68);
+    font-size: 4rem;
+    font-family: auto;
 }
 .main section,
 .main h2 {
@@ -278,6 +273,8 @@ html {
     }
 }
 
+
+
 @media (min-width: 480px) {
     .servicios {
     display: grid;
@@ -290,12 +287,13 @@ html {
       padding-left: 90rem;
     }
 }
+
 .servicio h3{
     color: rgb(38, 6, 68);
 }
 .servicio p{
     color: rgb(38, 6, 68);
-    text-align: center;
+    text-align: left;
 }
 .servicio .iconos {
     height: 15rem;
@@ -413,12 +411,68 @@ html {
 
 
 
-
+.imagen {
+    width: 35rem;
+    margin: 0 0 1rem 0;
+    transition: .5s ease;
+}
+.imagen:hover{
+    width: 55rem;
+}
 .sobre-mi {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.sobre-mi p,
+    .sobre-mi h3{
+        text-align: left;
+        margin: 10px 5rem;
+    }
+    .sobre-mi h2{
+        color:rgb(38, 6, 68);
+        font-size: 4rem;
+        font-family: auto;
+        margin-bottom: 1.5rem;
+    }
+    
+@media (min-width: 480px) {
+    
+    .sobre-mi p{
+        margin: 10px 6rem;
+    }
+    .sobre-mi h3{
+        text-align: left;
+    }
+    .sobre-mi {
+        margin: 0 22rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .sobre-mi h2{
+        color:rgb(38, 6, 68);
+        font-size: 4rem;
+        font-family: auto;
+        margin-bottom: 1.5rem;
+    }
+    .sobre-mi div {
+        margin: 8px;
+    }
+    
+    .sobre-mi p {
+        margin: 10px 7rem; 
+    }
+    
+    .imagen {
+        width: 50rem;
+    }
+   
+    .imagen :hover {
+        width: 50%;
+    }
 }
 
 .iconos-redes a i{
@@ -462,32 +516,6 @@ html {
 }
 }
 
-.imagen {
-    width: 90%;
-    margin: 0 0 1rem 0;
-    transition: .5s ease;
-}
-.imagen:hover{
-    width: 55rem;
-}
-@media (min-width: 480px) {
-    
-    .sobre-mi div {
-        margin: 8px;
-    }
-    
-    .sobre-mi p {
-        margin: 0 7rem; 
-    }
-    
-    .imagen {
-        width: 40%;
-    }
-   
-    .imagen :hover {
-        width: 100%;
-    }
-}
 
 .galeria{
     margin-left: 0rem;
