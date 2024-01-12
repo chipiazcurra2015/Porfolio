@@ -412,8 +412,8 @@ html {
 
 
 
-.imagen {
-    width: 27rem;
+.imagen{
+    width: 30rem;
     margin: 0 0 1rem 0;
     transition: .5s ease;
 }
@@ -467,11 +467,11 @@ html {
         margin: 10px 20rem; 
     }
     
-    .imagen {
+    .imagen{
         width: 50rem;
     }
    
-    .imagen :hover {
+    .imagen :hover{
         width: 52rem;
     }
 }
