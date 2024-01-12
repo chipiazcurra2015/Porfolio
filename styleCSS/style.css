@@ -248,7 +248,7 @@ html {
   }
 .sombra {
     background-color: white;
-    padding: 2rem 44px;
+    padding: 2rem 49px;
     border-radius: 0rem;
 }
 .main {
@@ -277,9 +277,10 @@ html {
 
 @media (min-width: 480px) {
     .servicios {
+    margin-left: 5rem;
     display: grid;
-    grid-template-columns: 30% 30% 33%;   /*-- utilizando grid--*/
-    column-gap: 5rem;
+    grid-template-columns: 20% 25% 25%;   /*-- utilizando grid--*/
+    column-gap: 18rem;
     }
 }
 @media (min-width: 480px) {
@@ -412,7 +413,7 @@ html {
 
 
 .imagen {
-    width: 35rem;
+    width: 27rem;
     margin: 0 0 1rem 0;
     transition: .5s ease;
 }
@@ -440,7 +441,7 @@ html {
 @media (min-width: 480px) {
     
     .sobre-mi p{
-        margin: 10px 6rem;
+        margin: 10px 55rem;
     }
     .sobre-mi h3{
         text-align: left;
@@ -463,7 +464,7 @@ html {
     }
     
     .sobre-mi p {
-        margin: 10px 7rem; 
+        margin: 10px 20rem; 
     }
     
     .imagen {
@@ -471,7 +472,7 @@ html {
     }
    
     .imagen :hover {
-        width: 50%;
+        width: 52rem;
     }
 }
 
